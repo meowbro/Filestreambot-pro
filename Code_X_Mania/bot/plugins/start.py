@@ -16,8 +16,8 @@ from pyrogram.types import ReplyKeyboardMarkup
 
 buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","login🔑","dc"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["start⚡️","help📚","login🔑"],
+                ["follow❤️","ping📡","status📊"]
                         
             ],
             resize_keyboard=True
@@ -28,7 +28,7 @@ buttonz=ReplyKeyboardMarkup(
             
             
             
-@StreamBot.on_message(filters.regex("maintainers😎"))
+'''@StreamBot.on_message(filters.regex("maintainers😎"))
 async def follow_user(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
@@ -45,7 +45,7 @@ async def follow_user(b,m):
                         ]
                     ),
                     parse_mode="markdown",
-                    disable_web_page_preview=True)
+                    disable_web_page_preview=True)'''
             
          
 @StreamBot.on_message(filters.regex("follow❤️"))
