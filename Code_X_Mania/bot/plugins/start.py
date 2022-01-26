@@ -88,7 +88,7 @@ async def help_handler(bot, message):
                 return
         except UserNotParticipant:
             await StreamBot.send_message(
-                chat_id=chat.id,
+                chat_id=message.chat.id,
                 text="""<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ 🔐</i>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
