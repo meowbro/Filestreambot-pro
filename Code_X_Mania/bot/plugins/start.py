@@ -87,10 +87,9 @@ async def help_handler(bot, message):
                 )
                 return
         except UserNotParticipant:
-            await StreamBot.send_photo(
-                chat_id=message.chat.id,
-                photo="https://i.ibb.co/ys3Tgpk/mtzijuhd-0.png",
-                Caption="**𝙹𝙾𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝚄𝚂𝙴 ᴛʜɪs Bᴏᴛ!**\n\n__Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ!__",
+            await StreamBot.send_message(
+                chat_id=m.chat.id,
+                text="""<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ 🔐</i>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
